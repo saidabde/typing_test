@@ -24,7 +24,7 @@ interface TextsContextType {
 const TextsContext = createContext<TextsContextType | null>(null);
 
 export const TextsProvider = ({ children }: { children: React.ReactNode }) => {
-  const [selectedTextId, setSelectedTextId] = useState<string | null>(null);
+  const [selectedTextId, setSelectedTextId] = useState<string | null>("1");
 
   const texts: Text[] = useMemo(
     () => [
