@@ -8,9 +8,9 @@ export default function TextLayout({
 }>) {
   return (
     <TextsProvider>
-      <div className="flex h-screen">
+      <div className="flex">
         <Sidebar />
-        <main className="flex-1 overflow-auto">{children}</main>
+        <main className="flex-1 overflow-auto bg-gray-200">{children}</main>
       </div>
     </TextsProvider>
   );

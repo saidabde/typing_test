@@ -8,7 +8,7 @@ export default function Sidebar() {
   const { texts } = useTexts();
 
   return (
-    <div className="w-64 bg-gray-100 border-r border-gray-200 h-screen">
+    <div className="w-64 bg-gray-300 h-screen">
       <div className="p-4 space-y-6">
         <h2 className="text-lg font-semibold">{t("sidebar.selectText")}</h2>
         <div className="space-y-3">
