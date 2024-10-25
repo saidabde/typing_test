@@ -61,7 +61,7 @@ export default function TypingTest() {
 
   return (
     <div className="text-center px-3 mt-8 w-[90%] m-auto space-y-10">
-      <h1 className="text-4xl font-semibold mb-5 text-sky-700">
+      <h1 className="text-4xl font-semibold mb-5 text-cyan-600">
         {textObject?.title}
       </h1>
 
