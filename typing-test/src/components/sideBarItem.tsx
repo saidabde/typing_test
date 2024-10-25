@@ -15,15 +15,15 @@ export default function SideBarItem(
         setSelectedTextId(text.id);
         router.push(`/texts/${text.id}`);
       }}
-      className={`cursor-pointer transition-colors hover:bg-gray-200 ${
-        selectedTextId === text.id ? "border-gray-500 bg-blue-50" : ""
+      className={`cursor-pointer transition-colors bg-cyan-50 hover:bg-cyan-100 ${
+        selectedTextId === text.id ? "border-cyan-800 bg-cyan-200" : ""
       }`}
     >
       <CardHeader className="p-3">
-        <CardTitle className="text-sm font-medium">{text.title}</CardTitle>
+        <CardTitle className="text-md font-medium">{text.title}</CardTitle>
       </CardHeader>
       <CardContent className="p-3 pt-0">
-        <p className="text-xs text-gray-500 line-clamp-2">{text.text}</p>
+        <p className="text-sm text-gray-500 line-clamp-2">{text.text}</p>
         <div className="mt-2 text-xs text-gray-400">
           {text.text.split(" ").length} words
         </div>

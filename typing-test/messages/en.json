@@ -5,5 +5,14 @@
   },
   "sidebar": {
     "selectText": "Select Text"
+  },
+  "typingTest": {
+    "result": "Result",
+    "time": "Time",
+    "accuracy": "Accuracy",
+    "speed": "Speed",
+    "correctWords": "Correct Words",
+    "incorrectWords": "Wrong Words",
+    "words": "Words"
   }
 }
