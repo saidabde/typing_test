@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getWordCount(text: string) {
+export function getWordCount(text: string): number {
   // Remove extra spaces and special characters
   const cleanText = text.trim().replace(/[^\w\s]/g, " ");
   // Split by one or more whitespace characters and filter out empty strings
@@ -13,7 +13,7 @@ export function getWordCount(text: string) {
   return words.length;
 }
 
-export function compareFirstPart(string1: string, string2: string) {
+export function compareFirstPart(string1: string, string2: string): boolean {
   // Find the length of the shorter string
   const minLength = Math.min(string1.length, string2.length);
 
@@ -25,4 +25,20 @@ export function compareFirstPart(string1: string, string2: string) {
   }
 
   return true;
+}
+
+export function formatTime(seconds: number): string {
+  const minutes = Math.floor(seconds / 60);
+  const formattedSeconds =
+    seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60;
+  return `${minutes}:${formattedSeconds}`;
+}
+
+export function calculateWPM(words: number, time: number): number {
+  if (time === 0) {
+    return 0;
+  }
+
+  const minutes = time / 60;
+  return Math.round(words / minutes);
 }
