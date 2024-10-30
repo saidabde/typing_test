@@ -4,7 +4,7 @@ A web application built with Next.js that allows users to test and improve their
 
 ## Demo
 
-Try out the live demo: [Typing Test App](http://54.234.149.78)
+Try out the live demo: [Typing Test App](https://letslearntotype.vercel.app/)
 
 ## Features
 
