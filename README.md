@@ -73,4 +73,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Abdennacer Saidi - saidiabdennacer2001@gmail.com
-Project Link: [http://54.234.149.78](http://54.234.149.78)
+Project Link: [letslearntotype.vercel.app](https://letslearntotype.vercel.app/)
